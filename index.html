@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header"><h1>BMI Calculator</h1></div>
+    <div class="container">
+        <div id ="mid1"> 
+            <h3>Modify the values and Press the Button</h3>
+            <div class="form">
+                <form id="bmiForm">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required><br><br>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+                <label for="heightFeet">Height:</label>
+                <div style="display: flex; gap: 10px;">
+                    <input type="number" id="heightFeet" name="heightFeet" placeholder="Feet" required>
+                    <input type="number" id="heightInches" name="heightInches" placeholder="Inches" required>
+                </div>
+
+
+                <label for="weight">Weight (kg):</label>
+                <input type="number" id="weight" name="weight" required><br><br>
+
+                <button type="submit" id="calculate">Calculate</button>
+            </form>
+            </div>      
+        </div>
+        <div id="mid2">
+            <h1> INFORMATION BOX </h1>
+            <div id="result">
+               <h2>What is BMI ??</h2>
+            </div>
+            <div id="result-info">
+                Body mass index (BMI) is a tool that healthcare providers use to estimate the amount of body fat by using your height and weight measurements. It can help assess risk factors for certain health conditions. The BMI isn’t always an accurate representation of body fatness.
+            </div>
+            <button class="reset hide"> Reset</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
